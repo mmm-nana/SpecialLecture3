@@ -1,0 +1,12 @@
+name: Test
+on: [push]
+jobs:
+  on_build_actions:
+    runs-on:ubuntu-latest
+    steps:
+      - uses: actions/check@v2
+      - name: Install dependancise
+        run: |
+          cd $GITHUB_WORKSPACE
+      - name: Run Tests
+        run: python -m unittest test/*.py
