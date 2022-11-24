@@ -3,13 +3,13 @@ from src import CSVPrinter
 
 class TestCSVPrinter(unittest.TestCase):
     def test_read(self):
-        printer = CSVPrinter("/Users/nanako-m/Desktop/授業/特別講義A, C/課題2-2/sample.csv")
+        printer = CSVPrinter("sample.csv")
         l = printer.read()
         self.assertEqual(3, len(l))
 
 
     def test_read2(self):
-        printer = CSVPrinter("/Users/nanako-m/Desktop/授業/特別講義A, C/課題2-2/sample.csv")
+        printer = CSVPrinter("sample.csv")
         Line = printer.read()
         self.assertEqual("5", Line[1][1])
 
