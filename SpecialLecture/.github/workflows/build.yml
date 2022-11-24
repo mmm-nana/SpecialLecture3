@@ -2,7 +2,7 @@ name: Test
 on: [push]
 jobs:
   on_build_actions:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/check@v2
       - name: Install dependancise
