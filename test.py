@@ -25,5 +25,5 @@ class TestCSVPrinter(unittest.TestCase):
 
         with self.assertRaises(FileNotFoundError) as e:
             printer = CSVPrinter("/Users/nanako-m/Desktop/授業/講義A, C/課題2-2/sample.csv")
-            line = printer.read()
+            # line = printer.read()
             
